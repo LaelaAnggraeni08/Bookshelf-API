@@ -186,6 +186,7 @@ const editBookByIdHandler = (request, h) => {
     status: 'fail',
     message: 'Gagal memperbarui Buku. Id tidak ditemukan',
   });
+
   response.code(404);
   return response;
 };
