@@ -138,7 +138,6 @@ const editBookByIdHandler = (request, h) => {
   const {
     name, year, author, summary, publisher, pageCount, readPage, reading,
   } = request.payload;
-  const updatedAt = new Date().toISOString();
 
   if (!name) {
     const response = h.response({
@@ -171,7 +170,6 @@ const editBookByIdHandler = (request, h) => {
       pageCount,
       readPage,
       reading,
-      updatedAt,
     };
 
     const response = h.response({
